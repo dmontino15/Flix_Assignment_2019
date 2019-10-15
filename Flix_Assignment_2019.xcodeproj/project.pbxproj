@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		CEF7B4AA2355840500FB12FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7B4A92355840500FB12FB /* AppDelegate.swift */; };
 		CEF7B4AC2355840500FB12FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7B4AB2355840500FB12FB /* SceneDelegate.swift */; };
-		CEF7B4AE2355840500FB12FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7B4AD2355840500FB12FB /* ViewController.swift */; };
 		CEF7B4B12355840500FB12FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF7B4AF2355840500FB12FB /* Main.storyboard */; };
 		CEF7B4B32355840600FB12FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF7B4B22355840600FB12FB /* Assets.xcassets */; };
 		CEF7B4B62355840600FB12FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF7B4B42355840600FB12FB /* LaunchScreen.storyboard */; };
 		CEF7B4C12355840700FB12FB /* Flix_Assignment_2019Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7B4C02355840700FB12FB /* Flix_Assignment_2019Tests.swift */; };
 		CEF7B4CC2355840700FB12FB /* Flix_Assignment_2019UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7B4CB2355840700FB12FB /* Flix_Assignment_2019UITests.swift */; };
+		CEF7B4DB235587F700FB12FB /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7B4DA235587F700FB12FB /* MoviesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		CEF7B4A62355840500FB12FB /* Flix_Assignment_2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flix_Assignment_2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF7B4A92355840500FB12FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEF7B4AB2355840500FB12FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEF7B4AD2355840500FB12FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEF7B4B02355840500FB12FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEF7B4B22355840600FB12FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEF7B4B52355840600FB12FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		CEF7B4C72355840700FB12FB /* Flix_Assignment_2019UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Flix_Assignment_2019UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF7B4CB2355840700FB12FB /* Flix_Assignment_2019UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flix_Assignment_2019UITests.swift; sourceTree = "<group>"; };
 		CEF7B4CD2355840700FB12FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF7B4DA235587F700FB12FB /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +99,9 @@
 		CEF7B4A82355840500FB12FB /* Flix_Assignment_2019 */ = {
 			isa = PBXGroup;
 			children = (
-				CEF7B4A92355840500FB12FB /* AppDelegate.swift */,
-				CEF7B4AB2355840500FB12FB /* SceneDelegate.swift */,
-				CEF7B4AD2355840500FB12FB /* ViewController.swift */,
+				CEF7B4DA235587F700FB12FB /* MoviesViewController.swift */,
 				CEF7B4AF2355840500FB12FB /* Main.storyboard */,
-				CEF7B4B22355840600FB12FB /* Assets.xcassets */,
-				CEF7B4B42355840600FB12FB /* LaunchScreen.storyboard */,
+				CEF7B4D92355843B00FB12FB /* Supporting Files */,
 				CEF7B4B72355840600FB12FB /* Info.plist */,
 			);
 			path = Flix_Assignment_2019;
@@ -126,6 +123,17 @@
 				CEF7B4CD2355840700FB12FB /* Info.plist */,
 			);
 			path = Flix_Assignment_2019UITests;
+			sourceTree = "<group>";
+		};
+		CEF7B4D92355843B00FB12FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEF7B4AB2355840500FB12FB /* SceneDelegate.swift */,
+				CEF7B4A92355840500FB12FB /* AppDelegate.swift */,
+				CEF7B4B22355840600FB12FB /* Assets.xcassets */,
+				CEF7B4B42355840600FB12FB /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEF7B4AE2355840500FB12FB /* ViewController.swift in Sources */,
 				CEF7B4AA2355840500FB12FB /* AppDelegate.swift in Sources */,
 				CEF7B4AC2355840500FB12FB /* SceneDelegate.swift in Sources */,
+				CEF7B4DB235587F700FB12FB /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
