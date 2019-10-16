@@ -15,6 +15,7 @@
 		CEF7B4C12355840700FB12FB /* Flix_Assignment_2019Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7B4C02355840700FB12FB /* Flix_Assignment_2019Tests.swift */; };
 		CEF7B4CC2355840700FB12FB /* Flix_Assignment_2019UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7B4CB2355840700FB12FB /* Flix_Assignment_2019UITests.swift */; };
 		CEF7B4DB235587F700FB12FB /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7B4DA235587F700FB12FB /* MoviesViewController.swift */; };
+		CEF7B4DD2356C9F900FB12FB /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7B4DC2356C9F900FB12FB /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CEF7B4CB2355840700FB12FB /* Flix_Assignment_2019UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flix_Assignment_2019UITests.swift; sourceTree = "<group>"; };
 		CEF7B4CD2355840700FB12FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEF7B4DA235587F700FB12FB /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		CEF7B4DC2356C9F900FB12FB /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				CEF7B4DA235587F700FB12FB /* MoviesViewController.swift */,
+				CEF7B4DC2356C9F900FB12FB /* MovieCell.swift */,
 				CEF7B4AF2355840500FB12FB /* Main.storyboard */,
 				CEF7B4D92355843B00FB12FB /* Supporting Files */,
 				CEF7B4B72355840600FB12FB /* Info.plist */,
@@ -269,6 +272,7 @@
 			files = (
 				CEF7B4AA2355840500FB12FB /* AppDelegate.swift in Sources */,
 				CEF7B4AC2355840500FB12FB /* SceneDelegate.swift in Sources */,
+				CEF7B4DD2356C9F900FB12FB /* MovieCell.swift in Sources */,
 				CEF7B4DB235587F700FB12FB /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
