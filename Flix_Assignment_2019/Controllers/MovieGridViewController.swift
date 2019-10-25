@@ -25,6 +25,14 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         superheroCollectionView.delegate = self
         superheroCollectionView.dataSource = self
         
+        let layout = superheroCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        
+        layout.minimumLineSpacing = 4
+        layout.minimumInteritemSpacing = 4
+        
+        let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2) / 3
+        layout.itemSize = CGSize(width: width, height: width * 3 / 2)
+        
         retrieveSuperheroMovies()
     }
     
