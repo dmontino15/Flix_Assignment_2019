@@ -23,13 +23,13 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         super.viewDidLoad()
 
         retrieveMovieLists()
-        
         tableView.dataSource = self
         tableView.delegate = self
     }
     
 
-    // MARK: - Navigation
+    // MARK: - Private Function
+    
     private func retrieveMovieLists() {
         let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
@@ -76,4 +76,25 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         return cell
     }
+    
+
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // Get the new view controller using segue.destination.
+        let cell = sender as! UITableViewCell
+        let movieCellIndex = tableView.indexPath(for: cell)!
+        let movie = movies[movieCellIndex.row]
+        
+        
+        // Pass the selected object to the new view controller.
+        let movieDetails = segue.destination as! MovieDetailsViewController
+        movieDetails.movie = movie
+        
+        // deselect cell
+        tableView.deselectRow(at: movieCellIndex, animated: true)
+    }
+
 }

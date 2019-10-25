@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		444EF2FC7FA5EBB33C93D349 /* Pods_Flix_Assignment_2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E1B932C3DB704135C9655AE /* Pods_Flix_Assignment_2019.framework */; };
 		677008E1637872CC7F726565 /* Pods_Flix_Assignment_2019Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919527E7DBC8098C1592B950 /* Pods_Flix_Assignment_2019Tests.framework */; };
+		CE105D212362BF2A00D822CA /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE105D202362BF2A00D822CA /* MovieDetailsViewController.swift */; };
 		CEF7B4AA2355840500FB12FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7B4A92355840500FB12FB /* AppDelegate.swift */; };
 		CEF7B4AC2355840500FB12FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7B4AB2355840500FB12FB /* SceneDelegate.swift */; };
 		CEF7B4B12355840500FB12FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF7B4AF2355840500FB12FB /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		711BF0548747164B7F0D096A /* Pods-Flix_Assignment_2019-Flix_Assignment_2019UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flix_Assignment_2019-Flix_Assignment_2019UITests.release.xcconfig"; path = "Target Support Files/Pods-Flix_Assignment_2019-Flix_Assignment_2019UITests/Pods-Flix_Assignment_2019-Flix_Assignment_2019UITests.release.xcconfig"; sourceTree = "<group>"; };
 		919527E7DBC8098C1592B950 /* Pods_Flix_Assignment_2019Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flix_Assignment_2019Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A303EC864E239561BAFB2A84 /* Pods-Flix_Assignment_2019Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flix_Assignment_2019Tests.release.xcconfig"; path = "Target Support Files/Pods-Flix_Assignment_2019Tests/Pods-Flix_Assignment_2019Tests.release.xcconfig"; sourceTree = "<group>"; };
+		CE105D202362BF2A00D822CA /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		CEF7B4A62355840500FB12FB /* Flix_Assignment_2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flix_Assignment_2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF7B4A92355840500FB12FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEF7B4AB2355840500FB12FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,7 +105,6 @@
 				E3AC3BA341DF062F7F2E8768 /* Pods-Flix_Assignment_2019Tests.debug.xcconfig */,
 				A303EC864E239561BAFB2A84 /* Pods-Flix_Assignment_2019Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -115,6 +116,15 @@
 				919527E7DBC8098C1592B950 /* Pods_Flix_Assignment_2019Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE105D222362BF3800D822CA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEF7B4DA235587F700FB12FB /* MoviesViewController.swift */,
+				CE105D202362BF2A00D822CA /* MovieDetailsViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		CEF7B49D2355840500FB12FB = {
@@ -142,7 +152,7 @@
 		CEF7B4A82355840500FB12FB /* Flix_Assignment_2019 */ = {
 			isa = PBXGroup;
 			children = (
-				CEF7B4DA235587F700FB12FB /* MoviesViewController.swift */,
+				CE105D222362BF3800D822CA /* Controllers */,
 				CEF7B4DC2356C9F900FB12FB /* MovieCell.swift */,
 				CEF7B4AF2355840500FB12FB /* Main.storyboard */,
 				CEF7B4D92355843B00FB12FB /* Supporting Files */,
@@ -419,6 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE105D212362BF2A00D822CA /* MovieDetailsViewController.swift in Sources */,
 				CEF7B4AA2355840500FB12FB /* AppDelegate.swift in Sources */,
 				CEF7B4AC2355840500FB12FB /* SceneDelegate.swift in Sources */,
 				CEF7B4DD2356C9F900FB12FB /* MovieCell.swift in Sources */,
