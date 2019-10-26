@@ -127,6 +127,7 @@
                                         <size key="customSize" width="182" height="209"/>
                                         <connections>
                                             <outlet property="moviePosterView" destination="nm1-Rt-8EJ" id="l9Y-Jq-sri"/>
+                                            <segue destination="CbG-oz-St0" kind="show" id="ZZc-nk-STZ"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -189,6 +190,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zOe-3v-PiP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-233" y="1117"/>
+        </scene>
+        <!--Superhero Movie Details View Controller-->
+        <scene sceneID="Itq-zG-8vh">
+            <objects>
+                <viewController id="CbG-oz-St0" customClass="SuperheroMovieDetailsViewController" customModule="Flix_Assignment_2019" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OaX-rT-AjE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xws-qo-Mma">
+                                <rect key="frame" x="0.0" y="34" width="414" height="299"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="za4-Y1-VDN">
+                                <rect key="frame" x="20" y="230" width="132" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsb-km-7mR">
+                                <rect key="frame" x="20" y="425" width="359" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqp-so-IYw">
+                                <rect key="frame" x="160" y="332" width="234" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Nbs-RA-gy8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XW8-MY-2Bh"/>
+                    <connections>
+                        <outlet property="backdropImgView" destination="Xws-qo-Mma" id="a39-QH-QbO"/>
+                        <outlet property="moviePosterImgView" destination="za4-Y1-VDN" id="sFa-4q-ccE"/>
+                        <outlet property="movieSynopsisLabel" destination="xsb-km-7mR" id="C6K-3F-G7S"/>
+                        <outlet property="movieTitleLabel" destination="zqp-so-IYw" id="Xa1-wM-TAn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zIv-hz-13S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1148" y="1117"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="4Xf-ua-ynD">
