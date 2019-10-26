@@ -40,7 +40,7 @@ Describe any challenges encountered while building the app.
 - [ ] (2pts) In the detail view, when the user taps the poster, a new screen is presented modally where they can view the trailer.
 
 ### App Walkthough GIF
-<img src="http://g.recordit.co/0mkSbIrTeK.gif" width=250><br>
+<img src="http://g.recordit.co/N6fZSL9csR.gif" width=250><br>
 
 ### Notes
 Describe any challenges encountered while building the app.
